@@ -1,7 +1,7 @@
 package com.mcoldibelli.authservice.infrastructure.security;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -27,14 +27,19 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @Getter
-@AllArgsConstructor
 public class SecurityConfig {
-  
+
   private static final String[] PUBLIC_POST_ENDPOINTS = {
-      "/auth/register"
+      "/auth/register",
+      "/auth/login"
   };
 
   private final SecurityFilter jwtAuthenticationFilter;
+
+  @Autowired
+  public SecurityConfig(SecurityFilter jwtAuthenticationFilter) {
+    this.jwtAuthenticationFilter = jwtAuthenticationFilter;
+  }
 
   /**
    * Configures the security filter chain for the application.
