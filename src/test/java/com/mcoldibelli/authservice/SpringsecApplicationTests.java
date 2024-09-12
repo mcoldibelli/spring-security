@@ -1,4 +1,4 @@
-package com.mcoldibelli.springsec;
+package com.mcoldibelli.authservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringsecApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+  @Test
+  void contextLoads() {
+  }
 
 }

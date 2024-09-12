@@ -1,4 +1,4 @@
-package com.mcoldibelli.springsec;
+package com.mcoldibelli.authservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

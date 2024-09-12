@@ -1,4 +1,4 @@
-package com.mcoldibelli.springsec.domain.user;
+package com.mcoldibelli.authservice.domain.enums;
 
 /**
  * Role categories.

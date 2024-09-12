@@ -1,6 +1,6 @@
-package com.mcoldibelli.springsec.repository;
+package com.mcoldibelli.authservice.repository;
 
-import com.mcoldibelli.springsec.domain.user.User;
+import com.mcoldibelli.authservice.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
