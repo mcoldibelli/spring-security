@@ -38,10 +38,13 @@ public class User {
   @Column(nullable = false)
   private UserRole role;
 
-  protected User(String login, String password, UserRole role) {
+  private User(String login, String password, UserRole role) {
     this.login = login;
     this.password = password;
     this.role = role;
   }
 
+  private static User createUser(String login, String password, UserRole role) {
+    return new User(login, password, role);
+  }
 }
