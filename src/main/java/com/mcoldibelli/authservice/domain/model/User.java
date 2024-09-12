@@ -44,7 +44,7 @@ public class User {
     this.role = role;
   }
 
-  private static User createUser(String login, String password, UserRole role) {
+  public static User createUser(String login, String password, UserRole role) {
     return new User(login, password, role);
   }
 }
